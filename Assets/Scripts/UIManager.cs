@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,6 +12,12 @@ public class UIManager : MonoBehaviour
 
     public UIPanel mainPanel;
     public UIPanel tutorialPanel;
+
+    [Space] 
+    public Ease buttonAnimationEase;
+    public float buttonAnimationDuration;
+    public float buttonAnimationStrength;
+    public int buttonAnimationVibrato;
     
     private List<UIPanel> panels = new List<UIPanel>();
     private UIPanel currentPanel;

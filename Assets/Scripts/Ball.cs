@@ -32,7 +32,11 @@ public class Ball : MonoBehaviour
                 new GameNotification.GameNotificationData(Mathf.RoundToInt(coins), goal.type));
 
             GameManager.instance.balls.Remove(gameObject);
-            
+
+            if (MoneyManager.instance.GetMoneyCount() == 0)
+            {
+                PlayerPrefs.SetInt("LoseAll", 1);
+            }
             Destroy(gameObject);
         }
     }

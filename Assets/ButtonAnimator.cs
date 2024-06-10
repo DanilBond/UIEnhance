@@ -16,6 +16,11 @@ public class ButtonAnimator : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        transform.DOShakeScale(.15f, 1).OnComplete(() => { transform.DOScale(_defaultScale, .1f);});
+        transform.DOShakeScale(UIManager.instance.buttonAnimationDuration, UIManager.instance.buttonAnimationStrength,
+            UIManager.instance.buttonAnimationVibrato).SetEase(UIManager.instance.buttonAnimationEase).OnComplete(() =>
+        {
+            transform.DOScale(_defaultScale, UIManager.instance.buttonAnimationDuration / 2f)
+                .SetEase(UIManager.instance.buttonAnimationEase);
+        });
     }
 }

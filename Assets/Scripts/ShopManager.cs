@@ -130,7 +130,18 @@ public class ShopManager : MonoBehaviour
         {
             if (PlayerPrefs.GetInt(item.data.name, 0) == 0)
             {
-                item.SetState("NotBuyed");
+                if (item.data.isNewYear)
+                {
+                    item.SetState("NewYear");
+                }
+                else if (item.data.isStarBall)
+                {
+                    item.SetState("StarBall");
+                }
+                else
+                {
+                    item.SetState("NotBuyed");
+                }
             }
             else
             {
@@ -156,4 +167,7 @@ public class ShopItemData
 
     public bool canSelect;
     public bool notifyPurchase;
+    
+    public bool isNewYear;
+    public bool isStarBall;
 }

@@ -44,6 +44,7 @@ public class MoneyManager : MonoBehaviour
         Money = PlayerPrefs.GetInt("Money", 0);
         Money += value;
         PlayerPrefs.SetInt("Money", Money);
+        PlayerPrefs.SetInt("AllMoney", PlayerPrefs.GetInt("AllMoney") + value);
         UpdateContainers();
     }
 

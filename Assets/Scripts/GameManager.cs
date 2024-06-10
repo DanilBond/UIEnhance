@@ -112,7 +112,11 @@ public class GameManager : MonoBehaviour
     {
         if(!CanPlay())
             return;
-        
+
+        if (currentBid == MoneyManager.instance.GetMoneyCount())
+        {
+            PlayerPrefs.SetInt("AllIn", 1);
+        }
         MoneyManager.instance.SetMoneyCount(-currentBid);
 
         Vector2 pos = startPosition.position;
