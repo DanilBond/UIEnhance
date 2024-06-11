@@ -1503,7 +1503,6 @@ GameObject:
   - component: {fileID: 329374802746861462}
   - component: {fileID: 7515647705152985689}
   - component: {fileID: 5662584237689610600}
-  - component: {fileID: 7750145294314490637}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -1612,18 +1611,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &7750145294314490637
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5533574574391781001}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bead5f5be192be54d83bdd463e10d77d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &6502823079931296994
 GameObject:
   m_ObjectHideFlags: 0
@@ -1757,7 +1744,6 @@ GameObject:
   - component: {fileID: 1031564696507662008}
   - component: {fileID: 7402586925216927559}
   - component: {fileID: 8909667374229289270}
-  - component: {fileID: 8449556562411148828}
   m_Layer: 5
   m_Name: Buy
   m_TagString: Untagged
@@ -1867,18 +1853,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &8449556562411148828
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7091396786343706007}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bead5f5be192be54d83bdd463e10d77d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &7223586449846784562
 GameObject:
   m_ObjectHideFlags: 0
@@ -2224,6 +2198,8 @@ GameObject:
   - component: {fileID: 8008819016026191562}
   - component: {fileID: 3985840483972612390}
   - component: {fileID: 5794691561901214496}
+  - component: {fileID: 1799682516449179915}
+  - component: {fileID: 2166026083296698652}
   m_Layer: 5
   m_Name: ShopItem
   m_TagString: Untagged
@@ -2325,6 +2301,34 @@ MonoBehaviour:
     notifyPurchase: 0
     isNewYear: 0
     isStarBall: 0
+--- !u!225 &1799682516449179915
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8781578338243815737}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &2166026083296698652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8781578338243815737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb9cb3df50293f745b27f9761458c8dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationDuration: 0.25
+  animationSequenceDuration: 0.25
+  overrideAnimation: 0
+  overrideEase: 0
 --- !u!1 &9147156175396593479
 GameObject:
   m_ObjectHideFlags: 0
